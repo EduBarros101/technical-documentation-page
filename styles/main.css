@@ -1,0 +1,50 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling */
+
+:root {
+    scroll-behavior: smooth;
+
+    --confirmation-color: #61b15a;
+}
+
+body {
+    background-color: rgb(161, 161, 161);
+}
+
+.content {
+    display: flex;
+
+    background-color: azure;
+}
+
+.nav-bar {
+    background-color: var(--confirmation-color);
+
+    width: 50rem;
+}
+
+.main {
+    background-color: yellow;
+
+    overflow-y: scroll;
+    height: 80vh;
+
+    padding: 3rem;
+}
+
+.main > p {
+    padding: 2rem;
+}
+
+.footer {
+    background-color: burlywood;
+
+    height: 20vh;
+}
