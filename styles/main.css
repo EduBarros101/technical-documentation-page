@@ -15,22 +15,23 @@
 }
 
 body {
-    background-color: rgb(161, 161, 161);
+    background-color: red;
 }
 
-.content {
+#main-content {
     display: flex;
 
     background-color: azure;
 }
 
-.nav-bar {
+#nav-bar {
     background-color: var(--confirmation-color);
 
-    width: 50rem;
+    flex: none;
+    width: 15rem;
 }
 
-.main {
+#main-doc {
     background-color: yellow;
 
     overflow-y: scroll;
@@ -39,11 +40,11 @@ body {
     padding: 3rem;
 }
 
-.main > p {
+#main-doc > p {
     padding: 2rem;
 }
 
-.footer {
+#footer {
     background-color: burlywood;
 
     height: 20vh;
