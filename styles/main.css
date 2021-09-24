@@ -9,6 +9,7 @@
 /* Styling */
 
 :root {
+    /* Scroll-behavior not working with overflow-y: scroll */
     scroll-behavior: smooth;
 
     --confirmation-color: #61b15a;
@@ -18,13 +19,27 @@ body {
     background-color: red;
 }
 
+#navbar {
+    padding: 1rem;
+}
+
+nav li {
+    padding: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 #main-content {
     display: flex;
 
     background-color: azure;
 }
 
-#nav-bar {
+#navbar {
     background-color: var(--confirmation-color);
 
     flex: none;
@@ -40,8 +55,17 @@ body {
     padding: 3rem;
 }
 
-#main-doc > p {
+#main-doc p {
+    padding: 1rem;
+
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+.main-section header {
     padding: 2rem;
+
+    font-weight: bold;
 }
 
 #footer {
