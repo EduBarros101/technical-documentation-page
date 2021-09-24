@@ -48,9 +48,10 @@ nav a {
 #main-doc {
     background-color: yellow;
 
+    /* Had to set scroll-behavior here, instead of :root, body or html. Seems overflow-y was overwriting it or something. */
     scroll-behavior: smooth;
     overflow-y: scroll;
-    height: 80vh;
+    height: 90vh;
 
     padding: 3rem;
 }
@@ -71,5 +72,7 @@ nav a {
 #footer {
     background-color: burlywood;
 
-    height: 20vh;
+    height: 10vh;
 }
+
+/* TODO: Gotta set the @media queries here for the navbar at smaller screens. */
