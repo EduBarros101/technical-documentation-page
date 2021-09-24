@@ -9,7 +9,6 @@
 /* Styling */
 
 :root {
-    /* Scroll-behavior not working with overflow-y: scroll */
     scroll-behavior: smooth;
 
     --confirmation-color: #61b15a;
@@ -49,6 +48,7 @@ nav a {
 #main-doc {
     background-color: yellow;
 
+    scroll-behavior: smooth;
     overflow-y: scroll;
     height: 80vh;
 
