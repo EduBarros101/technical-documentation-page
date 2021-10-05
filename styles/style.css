@@ -14,12 +14,10 @@
     --confirmation-color: #61b15a;
 }
 
-body {
-    background-color: red;
-}
+#main-content {
+    display: flex;
 
-#navbar {
-    padding: 1rem;
+    background-color: azure;
 }
 
 nav li {
@@ -32,26 +30,22 @@ nav a {
     color: black;
 }
 
-#main-content {
-    display: flex;
-
-    background-color: azure;
-}
-
 #navbar {
-    background-color: var(--confirmation-color);
-
     flex: none;
     width: 15rem;
+
+    padding: 1rem;
+
+    border: 2px solid gray;
 }
 
 #main-doc {
-    background-color: yellow;
-
-    /* Had to set scroll-behavior here, instead of :root, body or html. Seems overflow-y was overwriting it or something. */
+    /* Had to set scroll-behavior here, instead of :root, body or html. Seems that overflow-y was overwriting it or something. */
     scroll-behavior: smooth;
     overflow-y: scroll;
     height: 90vh;
+
+    border: 2px solid gray;
 
     padding: 3rem;
 }
@@ -70,9 +64,9 @@ nav a {
 }
 
 #footer {
-    background-color: burlywood;
-
     height: 10vh;
+
+    border: 2px solid gray;
 }
 
 /* I really gotta work more my media queries skills. */
