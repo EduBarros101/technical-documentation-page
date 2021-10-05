@@ -75,4 +75,10 @@ nav a {
     height: 10vh;
 }
 
-/* TODO: Gotta set the @media queries here for the navbar at smaller screens. */
+/* I really gotta work more my media queries skills. */
+
+@media (max-width: 736px) {
+    #navbar {
+        display: none;
+    }
+}
